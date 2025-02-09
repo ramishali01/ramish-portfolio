@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devic3-width, initial-scale=1.0">
+    <title>Ramish Ali - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #d3d3d3, #f4f4f4);
+            text-align: center;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            padding-left: 20px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+            padding-right: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding-top: 80px;
+        }
+        h2 {
+            color: #333;
+        }
+        .skills, .education, .projects {
+            background: #eee;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        .info-btn {
+            background: #28a745;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: inline-block;
+            color: white;
+        }
+        .info-btn:hover {
+            background: #218838;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Frontend Developer</h1>
+        <nav>
+            <a href="#education">📚 Education</a>
+            <a href="#skills">💡 Technical Skills</a>
+            <a href="#projects">🚀 My Projects</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>I'm Ramish Ali</h1>
+        <p>Frontend Developer | Graphic Designer | Web Enthusiast</p>
+        <button class="info-btn" onclick="document.getElementById('education').scrollIntoView();">📖 Education</button>
+        <div class="section education" id="education">
+            <h2>Education</h2>
+            <p><strong>Matric (2017-2018)</strong> - BISE Lahore (Marks: 753/1050)</p>
+            <p><strong>DAE (2019-2022)</strong> - Punjab Board of Technical (Marks: 2947/3450)</p>
+            <p><strong>BS Computer Science (2022-2026)</strong> - Continuing</p>
+        </div>
+        <button class="info-btn" onclick="document.getElementById('skills').scrollIntoView();">🛠️ Skills</button>
+        <div class="section skills" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>🎨 Graphic Designing</li>
+                <li>🤖 ChatGPT Expert</li>
+                <li>📊 MS Word, MS Excel</li>
+                <li>🔍 Web Searching</li>
+            </ul>
+        </div>
+        <button class="info-btn" onclick="document.getElementById('projects').scrollIntoView();">📂 Projects</button>
+        <div class="section projects" id="projects">
+            <h2>Projects</h2>
+            <p>Project details will be updated soon.</p>
+        </div>
+    </div>
+    <footer>
+        <p>📞 Contact: 03086816913 | 📧 Email: mianramish0000@gmail.com</p>
+        <p>&copy; 2025 Ramish Ali. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
